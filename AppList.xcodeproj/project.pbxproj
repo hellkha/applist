@@ -14,6 +14,10 @@
 		023C9CA91E37FF61006D036F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023C9CA71E37FF61006D036F /* LaunchScreen.storyboard */; };
 		023C9CB41E37FF61006D036F /* AppListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C9CB31E37FF61006D036F /* AppListTests.swift */; };
 		023C9CBF1E37FF61006D036F /* AppListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C9CBE1E37FF61006D036F /* AppListUITests.swift */; };
+		02F5F4CA1E3ABE8600A32515 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F5F4C91E3ABE8600A32515 /* Alamofire.framework */; };
+		02F5F4CC1E3AC03600A32515 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F5F4CB1E3AC03600A32515 /* SwiftyJSON.framework */; };
+		02F5F4CF1E3AC06100A32515 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5F4CD1E3AC06100A32515 /* Account.swift */; };
+		02F5F4D01E3AC06100A32515 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5F4CE1E3AC06100A32515 /* Articles.swift */; };
 		0F6495C5276466E83CC94FAC /* Pods_AppList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB2EE354BD586B291FE3858 /* Pods_AppList.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,10 @@
 		023C9CBA1E37FF61006D036F /* AppListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		023C9CBE1E37FF61006D036F /* AppListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListUITests.swift; sourceTree = "<group>"; };
 		023C9CC01E37FF61006D036F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F5F4C91E3ABE8600A32515 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AppList-cqcrjszdqjljcoaefnavlqaixsmq/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		02F5F4CB1E3AC03600A32515 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AppList-cqcrjszdqjljcoaefnavlqaixsmq/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		02F5F4CD1E3AC06100A32515 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		02F5F4CE1E3AC06100A32515 /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		4B6E29C57E5E2FE96259C48D /* Pods-AppList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppList.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppList/Pods-AppList.release.xcconfig"; sourceTree = "<group>"; };
 		CBB2EE354BD586B291FE3858 /* Pods_AppList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E842A9811CCE67278860DC /* Pods-AppList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppList/Pods-AppList.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F5F4CC1E3AC03600A32515 /* SwiftyJSON.framework in Frameworks */,
+				02F5F4CA1E3ABE8600A32515 /* Alamofire.framework in Frameworks */,
 				0F6495C5276466E83CC94FAC /* Pods_AppList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +114,7 @@
 		023C9C9D1E37FF61006D036F /* AppList */ = {
 			isa = PBXGroup;
 			children = (
+				02F5F4D11E3AC0AB00A32515 /* Models */,
 				023C9C9E1E37FF61006D036F /* AppDelegate.swift */,
 				023C9CA01E37FF61006D036F /* ViewController.swift */,
 				023C9CA21E37FF61006D036F /* Main.storyboard */,
@@ -132,9 +143,20 @@
 			path = AppListUITests;
 			sourceTree = "<group>";
 		};
+		02F5F4D11E3AC0AB00A32515 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02F5F4CD1E3AC06100A32515 /* Account.swift */,
+				02F5F4CE1E3AC06100A32515 /* Articles.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3DBC6424AB7A94E9DB8049C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02F5F4CB1E3AC03600A32515 /* SwiftyJSON.framework */,
+				02F5F4C91E3ABE8600A32515 /* Alamofire.framework */,
 				CBB2EE354BD586B291FE3858 /* Pods_AppList.framework */,
 			);
 			name = Frameworks;
@@ -334,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F5F4D01E3AC06100A32515 /* Articles.swift in Sources */,
 				023C9CA11E37FF61006D036F /* ViewController.swift in Sources */,
 				023C9C9F1E37FF61006D036F /* AppDelegate.swift in Sources */,
+				02F5F4CF1E3AC06100A32515 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +604,7 @@
 				023C9CC51E37FF62006D036F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		023C9CC61E37FF62006D036F /* Build configuration list for PBXNativeTarget "AppListTests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +613,7 @@
 				023C9CC81E37FF62006D036F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		023C9CC91E37FF62006D036F /* Build configuration list for PBXNativeTarget "AppListUITests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +622,7 @@
 				023C9CCB1E37FF62006D036F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
