@@ -55,5 +55,10 @@ class HomeViewModel: NSObject {
         return loadUrl
     }
     
+    
+    
+    func loadCurrentArticle(indice: Int) {
+        self.currentArticle = articlesArray?[indice]
+    }
 
 }
