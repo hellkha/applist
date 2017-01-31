@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  ArticlesViewModel.swift
 //  AppList
 //
 //  Created by Noturno on 26/01/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewModel: NSObject {
+class ArticlesViewModel: NSObject {
     
     private var account: Account?
     private var articlesArray: [Articles]?
