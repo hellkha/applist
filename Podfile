@@ -5,4 +5,5 @@ target 'AppList' do
   use_frameworks!
 	pod 'Alamofire', '~> 4.3'
 	pod 'SwiftyJSON'
+	pod 'ALLoadingView', '~> 1.1'
 end

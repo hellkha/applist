@@ -9,7 +9,7 @@
         <!--Artigos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ArticlesViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ArticlesViewController" customModule="AppList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,26 +18,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nB2-ZL-mJw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="USd-ja-zSe">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="nB2-ZL-mJw" secondAttribute="trailing" constant="15" id="FvW-zw-xP3"/>
-                            <constraint firstItem="nB2-ZL-mJw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="S8y-Y9-3Fm"/>
-                            <constraint firstItem="nB2-ZL-mJw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="fNv-pv-Yyx"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nB2-ZL-mJw" secondAttribute="bottom" constant="15" id="lQp-fP-7UZ"/>
+                            <constraint firstItem="USd-ja-zSe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="21b-Cl-TYP"/>
+                            <constraint firstItem="USd-ja-zSe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="MJX-S4-OSA"/>
+                            <constraint firstAttribute="trailing" secondItem="USd-ja-zSe" secondAttribute="trailing" constant="20" id="QGG-8y-eGt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="USd-ja-zSe" secondAttribute="bottom" constant="200" id="Z20-3e-dFI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Artigos" id="rxK-2N-RsW"/>
+                    <navigationItem key="navigationItem" title="Artigos" id="rxK-2N-RsW">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="fastForward" id="pRo-7L-Ab3">
+                            <connections>
+                                <segue destination="p97-zu-Gs8" kind="presentation" id="YyO-g1-s4p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="mTableView" destination="nB2-ZL-mJw" id="MgD-mX-eTm"/>
+                        <outlet property="tableView" destination="USd-ja-zSe" id="MZi-wE-QaC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="-556"/>
+            <point key="canvasLocation" x="1013.6" y="-556.37181409295351"/>
+        </scene>
+        <!--Loading Test-->
+        <scene sceneID="CJp-sI-Tyv">
+            <objects>
+                <viewController id="p97-zu-Gs8" customClass="LoadingViewController" customModule="AppList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X9e-XU-NRQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Ds-VZ-AGu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fL1-SZ-cZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eddie" translatesAutoresizingMaskIntoConstraints="NO" id="e2r-CE-9Bf"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e2r-CE-9Bf" firstAttribute="leading" secondItem="fL1-SZ-cZL" secondAttribute="leading" id="B8d-W6-Icu"/>
+                            <constraint firstItem="6Ds-VZ-AGu" firstAttribute="top" secondItem="e2r-CE-9Bf" secondAttribute="bottom" id="Efc-Su-dC8"/>
+                            <constraint firstItem="e2r-CE-9Bf" firstAttribute="top" secondItem="X9e-XU-NRQ" secondAttribute="bottom" id="KCH-w9-naj"/>
+                            <constraint firstAttribute="trailing" secondItem="e2r-CE-9Bf" secondAttribute="trailing" id="qVp-zp-ghD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Loading Test" id="vev-QV-U0d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4M-uO-3Sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="-556"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QET-OR-uIW">
@@ -58,4 +92,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="-556.37181409295351"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eddie" width="737" height="801"/>
+    </resources>
 </document>
