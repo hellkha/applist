@@ -20,7 +20,6 @@ class ArticlesViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.tableView.layer.cornerRadius = 20
-//        self.tableView.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

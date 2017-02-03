@@ -6,4 +6,5 @@ target 'AppList' do
 	pod 'Alamofire', '~> 4.3'
 	pod 'SwiftyJSON'
 	pod 'ALLoadingView', '~> 1.1'
+    pod 'ObjectMapper'
 end

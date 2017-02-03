@@ -18,7 +18,13 @@ protocol ArticlesDataProviderProtocol: BaseProtocol {
 
 class ArticlesDataProvider {
     
-    func requestArticles() {
+    func getAllArticles() {
+        
+        ArticlesAPIStore().getAllArticles(userID: "userId") { (account, error) in
+        
+            
+            
+        }
         // TODO: implement pedir dados da API
     }
 }

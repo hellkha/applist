@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.3.0)
   - ALLoadingView (1.1.1)
+  - ObjectMapper (2.2.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
   - ALLoadingView (~> 1.1)
+  - ObjectMapper
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   ALLoadingView: 1ad4f21ac3733413e612821d2bb333b65c22440e
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: a9d0dbddeb1999a1d3711f6e7434433920ef467f
+PODFILE CHECKSUM: e0b343f2882f569ab9c92a46e2ff806113572924
 
 COCOAPODS: 1.1.1
