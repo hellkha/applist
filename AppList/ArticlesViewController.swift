@@ -10,8 +10,13 @@ import UIKit
 
 class ArticlesViewController: UIViewController {
 
-    
+    // Outlets
     @IBOutlet weak var tableView: UITableView!
+    
+    
+    // Variables
+    var dataProvider = ArticlesDataProvider()
+    var viewModel: ArticlesViewModel?
     
     
     override func viewDidLoad() {
@@ -19,7 +24,14 @@ class ArticlesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        
+        self.dataProvider.delegate = self
+        
+        
         self.tableView.layer.cornerRadius = 20
+        
+        
+        self.dataProvider.getAllArticles()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,4 +40,21 @@ class ArticlesViewController: UIViewController {
     }
     
 
+}
+
+
+
+extension ArticlesViewController: ArticlesDataProviderProtocol {
+    
+    func success<T>(vm: T) {
+        LoadingView.isLoading(view: self.view, show: false)
+
+        guard let currentVM = vm as? ArticlesViewModel else {return}
+        self.viewModel = currentVM
+    }
+    
+    func fail(error: NSError) {
+        LoadingView.isLoading(view: self.view, show: false)
+    }
+    
 }

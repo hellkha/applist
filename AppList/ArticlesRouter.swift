@@ -19,7 +19,6 @@ enum ArticlesRouter: URLRequestConvertible {
         switch self {
         case .getAllArticles:
             return .get
-//            break
         }
     }
     
@@ -27,20 +26,24 @@ enum ArticlesRouter: URLRequestConvertible {
     var path: String {
         switch self {
         case .getAllArticles:
-            return ""   // TODO: Colocar a URL da API
-//            break
+            return API.getArticles
         }
     }
     
     
     func asURLRequest() throws -> URLRequest {
-        var url = URL(string: "")!   // TODO: colocar a BASE URL da API
+        
+        var url = URL(string: API.baseURL)!
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         
         switch self {
+            
         case .getAllArticles(let idUser):
+            
             var parameters = String(describing: urlRequest)
             parameters = parameters.replacingOccurrences(of: "$$", with: idUser)
+            parameters = parameters.replacingOccurrences(of: "%3F", with: "?")
+            
             url = URL(string: parameters)!
             urlRequest = URLRequest(url: url)
             urlRequest.httpMethod = method.rawValue

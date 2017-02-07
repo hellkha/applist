@@ -22,4 +22,9 @@ class LoadingView {
             ALLoadingView.manager.hideLoadingView()
         }
     }
+    
+    static func isLoading(view: UIView, show: Bool){
+        
+        print("is loading")
+    }
 }

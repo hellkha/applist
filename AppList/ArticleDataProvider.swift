@@ -18,13 +18,22 @@ protocol ArticlesDataProviderProtocol: BaseProtocol {
 
 class ArticlesDataProvider {
     
+    var delegate: ArticlesDataProviderProtocol?
+    
     func getAllArticles() {
         
-        ArticlesAPIStore().getAllArticles(userID: "userId") { (account, error) in
-        
+        ArticlesAPIStore().getAllArticles(userID: "0e8c08a1b7de446fa72745b5a0c7ae8b") { (account, error) in
             
+            if nil != error {
+                self.delegate?.fail(error: error!)
+            } else {
+                guard let modelAccount = account else {return}
+                let vm = ArticlesViewModel(account: modelAccount)
+                
+                self.delegate?.success(vm: vm)
+            }
             
         }
-        // TODO: implement pedir dados da API
+        
     }
 }
