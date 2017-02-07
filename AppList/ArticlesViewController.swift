@@ -21,16 +21,10 @@ class ArticlesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
-        
         self.dataProvider.delegate = self
-        
-        
         self.tableView.layer.cornerRadius = 20
-        
-        
         self.dataProvider.getAllArticles()
     }
 

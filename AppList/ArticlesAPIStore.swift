@@ -22,7 +22,7 @@ class ArticlesAPIStore: ArticlesStore {
             
             Alamofire.request(urlRequest)
                 
-                .validate(statusCode: 200...200)
+//                .validate(statusCode: 200...200)
             
                 .responseJSON(completionHandler: { (response) in
                     
@@ -40,7 +40,8 @@ class ArticlesAPIStore: ArticlesStore {
                         
                         
                     default:
-                        completion(nil, response.error as? NSError)
+                        self.error = NSError(domain: "", code: (response.response?.statusCode)!, userInfo: nil)
+                        completion(nil, self.error)
                     }
                     
                 })

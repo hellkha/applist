@@ -14,17 +14,22 @@ class LoadingView {
     
     static func showLoading() {
         ALLoadingView.manager.blurredBackground = true
-        ALLoadingView.manager.showLoadingView(ofType: .messageWithIndicatorAndCancelButton, windowMode: .fullscreen)
+        ALLoadingView.manager.showLoadingView(ofType: .basic)
     }
     
     static func hideLoading() {
-        ALLoadingView.manager.cancelCallback = {
-            ALLoadingView.manager.hideLoadingView()
-        }
+        ALLoadingView.manager.hideLoadingView()
     }
     
     static func isLoading(view: UIView, show: Bool){
         
-        print("is loading")
+        if show{
+//            ASProgressHud.showHUDAddedTo(view, animated: true, type: .default)
+            // TODO: instalar o ASProgressHud
+            print("Show RUD")
+        }else{
+//            ASProgressHud.hideHUDForView(view, animated: true)
+            print("Hide RUD")
+        }
     }
 }

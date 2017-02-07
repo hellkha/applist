@@ -18,8 +18,6 @@ protocol AccountsDataProviderProtocol: BaseProtocol {
 
 class AccountsDataProvider {
     
-    var delegate: AccountsDataProviderProtocol?
-    
     func requestAccounts() {
         // TODO: implement pedir dados da API
     }

@@ -137,11 +137,11 @@
 			isa = PBXGroup;
 			children = (
 				02907DD31E43DDF700EF7329 /* Network */,
+				02ED20691E4A722500EC1876 /* Helpers */,
 				0263F9CF1E413C3900CCE198 /* DataProvider */,
 				0263F9D41E413F9B00CCE198 /* ViewModel */,
 				02F5F4D11E3AC0AB00A32515 /* Models */,
 				023C9C9E1E37FF61006D036F /* AppDelegate.swift */,
-				0263F9DD1E4155C700CCE198 /* LoadingView.swift */,
 				0263F9DB1E414FDB00CCE198 /* LoadingViewController.swift */,
 				0263F9DF1E41591C00CCE198 /* ArticlesViewController.swift */,
 				023C9CA51E37FF61006D036F /* Assets.xcassets */,
@@ -222,6 +222,14 @@
 				02907DD71E43DE6800EF7329 /* ArticlesRouter.swift */,
 			);
 			name = Routers;
+			sourceTree = "<group>";
+		};
+		02ED20691E4A722500EC1876 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0263F9DD1E4155C700CCE198 /* LoadingView.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		02F5F4D11E3AC0AB00A32515 /* Models */ = {
