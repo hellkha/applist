@@ -24,6 +24,7 @@
 		02907E521E43F5BB00EF7329 /* ArticlesAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02907E511E43F5BB00EF7329 /* ArticlesAPIStore.swift */; };
 		02E227C81E492F090035D816 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E227C71E492F090035D816 /* API.swift */; };
 		02ED20681E49394600EC1876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02ED20671E49394600EC1876 /* Main.storyboard */; };
+		02ED206E1E4A912C00EC1876 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED206D1E4A912C00EC1876 /* ArticleDetailViewController.swift */; };
 		02F5F4CA1E3ABE8600A32515 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F5F4C91E3ABE8600A32515 /* Alamofire.framework */; };
 		02F5F4CC1E3AC03600A32515 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F5F4CB1E3AC03600A32515 /* SwiftyJSON.framework */; };
 		02F5F4CF1E3AC06100A32515 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5F4CD1E3AC06100A32515 /* Account.swift */; };
@@ -73,6 +74,8 @@
 		02907E511E43F5BB00EF7329 /* ArticlesAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesAPIStore.swift; sourceTree = "<group>"; };
 		02E227C71E492F090035D816 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		02ED20671E49394600EC1876 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		02ED206A1E4A80B800EC1876 /* ASProgressHud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASProgressHud.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AppList-cqcrjszdqjljcoaefnavlqaixsmq/Build/Products/Debug-iphonesimulator/ASProgressHud/ASProgressHud.framework"; sourceTree = "<group>"; };
+		02ED206D1E4A912C00EC1876 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		02F5F4C91E3ABE8600A32515 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AppList-cqcrjszdqjljcoaefnavlqaixsmq/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		02F5F4CB1E3AC03600A32515 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AppList-cqcrjszdqjljcoaefnavlqaixsmq/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		02F5F4CD1E3AC06100A32515 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 				023C9C9E1E37FF61006D036F /* AppDelegate.swift */,
 				0263F9DB1E414FDB00CCE198 /* LoadingViewController.swift */,
 				0263F9DF1E41591C00CCE198 /* ArticlesViewController.swift */,
+				02ED206D1E4A912C00EC1876 /* ArticleDetailViewController.swift */,
 				023C9CA51E37FF61006D036F /* Assets.xcassets */,
 				023C9CA71E37FF61006D036F /* LaunchScreen.storyboard */,
 				02ED20671E49394600EC1876 /* Main.storyboard */,
@@ -244,6 +248,7 @@
 		3DBC6424AB7A94E9DB8049C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02ED206A1E4A80B800EC1876 /* ASProgressHud.framework */,
 				02F5F4CB1E3AC03600A32515 /* SwiftyJSON.framework */,
 				02F5F4C91E3ABE8600A32515 /* Alamofire.framework */,
 				CBB2EE354BD586B291FE3858 /* Pods_AppList.framework */,
@@ -451,6 +456,7 @@
 				0263F9D61E41402600CCE198 /* AccountsDataProvider.swift in Sources */,
 				02E227C81E492F090035D816 /* API.swift in Sources */,
 				02907DD81E43DE6800EF7329 /* ArticlesRouter.swift in Sources */,
+				02ED206E1E4A912C00EC1876 /* ArticleDetailViewController.swift in Sources */,
 				02907E521E43F5BB00EF7329 /* ArticlesAPIStore.swift in Sources */,
 				0263F9DE1E4155C700CCE198 /* LoadingView.swift in Sources */,
 				023C9C9F1E37FF61006D036F /* AppDelegate.swift in Sources */,

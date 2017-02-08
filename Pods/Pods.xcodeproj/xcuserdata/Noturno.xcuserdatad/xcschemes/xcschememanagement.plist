@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ASProgressHud-Resources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ASProgressHud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>02956567883CDD38F2B05CE4AD01D73C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>35C149B1BDA5B53C84B89A37BF2F6CCB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53665235E56202456EE315DD42F83596</key>
+		<key>5DC2075D1D4BAC8DE5E1F4802AEEE0D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
+		<key>8B8E27A79A0712426D3C843A6B3F6379</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1BBED197DE497A4C2AF71A32EC57827</key>
+		<key>9E7B6156FF3BEBAAADBBB3F90966ACBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

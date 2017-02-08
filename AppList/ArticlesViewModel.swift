@@ -13,6 +13,8 @@ class ArticlesViewModel: NSObject {
     private var account: Account?
     private var articlesArray: [Articles]?
     private var currentArticle: Articles?
+    private var currentDetailsArticle: Articles?
+    
     
     init (account: Account) {
         self.account = account
@@ -55,10 +57,22 @@ class ArticlesViewModel: NSObject {
         return loadUrl
     }
     
+    var descriptionDetail: String {
+        return (self.currentDetailsArticle?.descriptionValue)!
+    }
+    
     
     
     func loadCurrentArticle(indice: Int) {
         self.currentArticle = articlesArray?[indice]
+    }
+    
+    func setupDetailsSelected(indice: Int) {
+        self.currentDetailsArticle = self.articlesArray?[indice]
+    }
+    
+    var loadCountArticles: Int {
+        return (self.articlesArray?.count)!
     }
 
 }
