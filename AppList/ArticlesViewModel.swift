@@ -62,6 +62,33 @@ class ArticlesViewModel: NSObject {
     }
     
     
+    var imageDetail: UIImage? {
+        
+        let url = URL(string: (self.currentArticle?.urlToImage)!)
+        
+        do {
+            let data = try Data(contentsOf: url!)
+            return UIImage(data: data)!
+        } catch {
+            return nil
+        }
+        
+    }
+    
+    var imageDetailSelected: UIImage? {
+        
+        let url = URL(string: (self.currentDetailsArticle?.urlToImage)!)
+        
+        do {
+            let data = try Data(contentsOf: url!)
+            return UIImage(data: data)!
+        } catch {
+            return nil
+        }
+        
+    }
+    
+    
     
     func loadCurrentArticle(indice: Int) {
         self.currentArticle = articlesArray?[indice]

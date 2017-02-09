@@ -14,6 +14,7 @@ class ArticleDetailViewController: UIViewController {
     
     
     @IBOutlet weak var articleDescription: UITextView!
+    @IBOutlet weak var articleAvatar: UIImageView!
     
     
     
@@ -22,6 +23,7 @@ class ArticleDetailViewController: UIViewController {
         
         self.articleDescription.layer.cornerRadius = 20
         self.articleDescription.text = viewModel?.descriptionDetail
+        self.articleAvatar.image = viewModel?.imageDetailSelected
     }
 
 

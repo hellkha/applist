@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020C34971E4D1BAE00F3412E /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C34961E4D1BAE00F3412E /* ArticleTableViewCell.swift */; };
 		023C9C9F1E37FF61006D036F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023C9C9E1E37FF61006D036F /* AppDelegate.swift */; };
 		023C9CA61E37FF61006D036F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023C9CA51E37FF61006D036F /* Assets.xcassets */; };
 		023C9CA91E37FF61006D036F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023C9CA71E37FF61006D036F /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020C34961E4D1BAE00F3412E /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		023C9C9B1E37FF61006D036F /* AppList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023C9C9E1E37FF61006D036F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023C9CA51E37FF61006D036F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				0263F9D41E413F9B00CCE198 /* ViewModel */,
 				02F5F4D11E3AC0AB00A32515 /* Models */,
 				023C9C9E1E37FF61006D036F /* AppDelegate.swift */,
+				020C34961E4D1BAE00F3412E /* ArticleTableViewCell.swift */,
 				0263F9DB1E414FDB00CCE198 /* LoadingViewController.swift */,
 				0263F9DF1E41591C00CCE198 /* ArticlesViewController.swift */,
 				02ED206D1E4A912C00EC1876 /* ArticleDetailViewController.swift */,
@@ -460,6 +463,7 @@
 				02907E521E43F5BB00EF7329 /* ArticlesAPIStore.swift in Sources */,
 				0263F9DE1E4155C700CCE198 /* LoadingView.swift in Sources */,
 				023C9C9F1E37FF61006D036F /* AppDelegate.swift in Sources */,
+				020C34971E4D1BAE00F3412E /* ArticleTableViewCell.swift in Sources */,
 				0263F9D11E413C6700CCE198 /* ArticleDataProvider.swift in Sources */,
 				02F5F4D31E3AC1BC00A32515 /* ArticlesViewModel.swift in Sources */,
 				02F5F4CF1E3AC06100A32515 /* Account.swift in Sources */,
