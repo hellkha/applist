@@ -13,7 +13,6 @@ class ArticlesViewController: UIViewController {
 
     // Outlets
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var cell: UITableViewCell!
     @IBOutlet weak var buttonMenu: CircleMenu!
     
     
@@ -26,6 +25,7 @@ class ArticlesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         
         self.buttonMenu.delegate = self
         self.dataProvider.delegate = self

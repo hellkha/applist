@@ -20,9 +20,11 @@ extension ArticlesViewController: CircleMenuDelegate {
         
         switch atIndex {
         case 0:
-            button.backgroundColor = UIColor.green
+            button.setBackgroundImage(#imageLiteral(resourceName: "button-galery"), for: .normal)
+            button.backgroundColor = UIColor.black
             break
         case 1:
+            button.setBackgroundImage(#imageLiteral(resourceName: "button-camera"), for: .normal)
             button.backgroundColor = UIColor.blue
             break
         case 2:
@@ -40,10 +42,12 @@ extension ArticlesViewController: CircleMenuDelegate {
         
         switch atIndex {
         case 0:
-            button.setBackgroundImage(#imageLiteral(resourceName: "button-blue"), for: .normal)
+//            button.setBackgroundImage(#imageLiteral(resourceName: "button-blue"), for: .normal)
+            self.tappedShowGalery()
             break
         case 1:
-            button.setBackgroundImage(#imageLiteral(resourceName: "button-blue"), for: .normal)
+//            button.setBackgroundImage(#imageLiteral(resourceName: "button-blue"), for: .normal)
+            self.tappedShowCamera()
             break
         case 2:
             button.setBackgroundImage(#imageLiteral(resourceName: "button-blue"), for: .normal)
@@ -74,5 +78,31 @@ extension ArticlesViewController: CircleMenuDelegate {
         }
         
     }
+    
+    
+    
+    func tappedShowGalery() {
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+            
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+            
+        }
+    }
+    
+    
+    func tappedShowCamera() {
+        
+    }
+    
+}
+
+
+
+extension ArticlesViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
 }
