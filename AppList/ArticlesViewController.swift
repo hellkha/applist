@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CircleMenu
 
 class ArticlesViewController: UIViewController {
 
     // Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cell: UITableViewCell!
+    @IBOutlet weak var buttonMenu: CircleMenu!
     
     
     // Variables
@@ -25,6 +27,7 @@ class ArticlesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        self.buttonMenu.delegate = self
         self.dataProvider.delegate = self
         self.tableView.layer.cornerRadius = 20
         self.dataProvider.getAllArticles()

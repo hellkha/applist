@@ -8,4 +8,5 @@ target 'AppList' do
 	pod 'ALLoadingView', '~> 1.1'
     pod 'ASProgressHud', '~> 1.0'
     pod 'ObjectMapper'
+    pod 'CircleMenu', '~> 2.0'
 end

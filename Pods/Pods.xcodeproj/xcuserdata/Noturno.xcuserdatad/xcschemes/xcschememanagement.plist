@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CircleMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5DC2075D1D4BAC8DE5E1F4802AEEE0D4</key>
+		<key>54CA21024F542FD18CD30DBA104A4455</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E7B6156FF3BEBAAADBBB3F90966ACBD</key>
+		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
+		<key>BB40776646202433856121CAD8F19DF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE0EA4A854B31B97AB23A6135FCBFABD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
