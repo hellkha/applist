@@ -19,6 +19,9 @@
 		0263F9D81E41425200CCE198 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263F9D71E41425200CCE198 /* AccountsViewModel.swift */; };
 		0263F9DE1E4155C700CCE198 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263F9DD1E4155C700CCE198 /* LoadingView.swift */; };
 		0263F9E01E41591C00CCE198 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263F9DF1E41591C00CCE198 /* ArticlesViewController.swift */; };
+		0279D83A1E53C128000C0912 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0279D8391E53C128000C0912 /* GoogleService-Info.plist */; };
+		0279D83C1E53CEB3000C0912 /* LoginDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279D83B1E53CEB3000C0912 /* LoginDataProvider.swift */; };
+		0279D83F1E53D250000C0912 /* LoginViewController+LoginDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279D83E1E53D250000C0912 /* LoginViewController+LoginDataProviderProtocol.swift */; };
 		02907DD81E43DE6800EF7329 /* ArticlesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02907DD71E43DE6800EF7329 /* ArticlesRouter.swift */; };
 		02907E501E43F0CA00EF7329 /* ArticlesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02907E4F1E43F0CA00EF7329 /* ArticlesStore.swift */; };
 		02907E521E43F5BB00EF7329 /* ArticlesAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02907E511E43F5BB00EF7329 /* ArticlesAPIStore.swift */; };
@@ -71,6 +74,9 @@
 		0263F9D71E41425200CCE198 /* AccountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		0263F9DD1E4155C700CCE198 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0263F9DF1E41591C00CCE198 /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		0279D8391E53C128000C0912 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0279D83B1E53CEB3000C0912 /* LoginDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDataProvider.swift; sourceTree = "<group>"; };
+		0279D83E1E53D250000C0912 /* LoginViewController+LoginDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginViewController+LoginDataProviderProtocol.swift"; sourceTree = "<group>"; };
 		02907DD71E43DE6800EF7329 /* ArticlesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesRouter.swift; sourceTree = "<group>"; };
 		02907E4F1E43F0CA00EF7329 /* ArticlesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesStore.swift; sourceTree = "<group>"; };
 		02907E511E43F5BB00EF7329 /* ArticlesAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesAPIStore.swift; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				023C9CA71E37FF61006D036F /* LaunchScreen.storyboard */,
 				02ED20671E49394600EC1876 /* Main.storyboard */,
 				023C9CAA1E37FF61006D036F /* Info.plist */,
+				0279D8391E53C128000C0912 /* GoogleService-Info.plist */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				0263F9D01E413C6700CCE198 /* ArticleDataProvider.swift */,
 				0263F9D51E41402600CCE198 /* AccountsDataProvider.swift */,
 				0263F9D21E413E5100CCE198 /* BaseProtocol.swift */,
+				0279D83B1E53CEB3000C0912 /* LoginDataProvider.swift */,
 			);
 			name = DataProvider;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 				0263F9DF1E41591C00CCE198 /* ArticlesViewController.swift */,
 				02A5D4481E52677B00569AE5 /* ArticleViewController+CircleMenuDelegate.swift */,
 				02A5D44B1E5280B900569AE5 /* LoginViewController.swift */,
+				0279D83E1E53D250000C0912 /* LoginViewController+LoginDataProviderProtocol.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -390,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02ED20681E49394600EC1876 /* Main.storyboard in Resources */,
+				0279D83A1E53C128000C0912 /* GoogleService-Info.plist in Resources */,
 				023C9CA91E37FF61006D036F /* LaunchScreen.storyboard in Resources */,
 				023C9CA61E37FF61006D036F /* Assets.xcassets in Resources */,
 			);
@@ -465,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02A5D44C1E5280B900569AE5 /* LoginViewController.swift in Sources */,
+				0279D83F1E53D250000C0912 /* LoginViewController+LoginDataProviderProtocol.swift in Sources */,
 				0263F9E01E41591C00CCE198 /* ArticlesViewController.swift in Sources */,
 				02907E501E43F0CA00EF7329 /* ArticlesStore.swift in Sources */,
 				02F5F4D01E3AC06100A32515 /* Articles.swift in Sources */,
@@ -473,6 +484,7 @@
 				02907DD81E43DE6800EF7329 /* ArticlesRouter.swift in Sources */,
 				02ED206E1E4A912C00EC1876 /* ArticleDetailViewController.swift in Sources */,
 				02907E521E43F5BB00EF7329 /* ArticlesAPIStore.swift in Sources */,
+				0279D83C1E53CEB3000C0912 /* LoginDataProvider.swift in Sources */,
 				0263F9DE1E4155C700CCE198 /* LoadingView.swift in Sources */,
 				023C9C9F1E37FF61006D036F /* AppDelegate.swift in Sources */,
 				020C34971E4D1BAE00F3412E /* ArticleTableViewCell.swift in Sources */,

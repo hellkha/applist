@@ -9,4 +9,6 @@ target 'AppList' do
     pod 'ASProgressHud', '~> 1.0'
     pod 'ObjectMapper'
     pod 'CircleMenu', '~> 2.0'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
 end

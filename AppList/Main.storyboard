@@ -40,7 +40,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="93Z-Q2-noF" kind="show" id="4XY-o4-r5a"/>
+                                    <action selector="letMeInTapped:" destination="Evd-J7-zaH" eventType="touchUpInside" id="7Qh-4r-Ld4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,6 +66,7 @@
                         <outlet property="enterButton" destination="7si-QH-yd4" id="QhO-e5-vNG"/>
                         <outlet property="loginTextField" destination="TzM-IS-nOB" id="ZHJ-pw-Ikb"/>
                         <outlet property="passwordTextField" destination="EHo-YU-Syy" id="lXP-94-i8B"/>
+                        <segue destination="93Z-Q2-noF" kind="show" identifier="Login" id="yQU-bg-vAq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfk-9K-6e3" userLabel="First Responder" sceneMemberID="firstResponder"/>
